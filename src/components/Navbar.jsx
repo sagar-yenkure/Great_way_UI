@@ -65,6 +65,7 @@ const Navbar = () => {
                   <NavigationMenuLink className="p-5">Link</NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+
               <NavigationMenuItem>
                 <button legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -79,6 +80,7 @@ const Navbar = () => {
                   </NavigationMenuLink>
                 </button>
               </NavigationMenuItem>
+
             </NavigationMenuList>{" "}
           </NavigationMenu>
         </nav>
