@@ -1,8 +1,9 @@
-import React from 'react'
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <div>
+      <h1>Heading from ravi</h1>
+    </div>
   )
 }
 
