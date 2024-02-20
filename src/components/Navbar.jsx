@@ -71,7 +71,7 @@ const Navbar = () => {
             <NavigationMenuItem>
               <button legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Contact
+                  Contact Us
                 </NavigationMenuLink>
               </button>
             </NavigationMenuItem>
