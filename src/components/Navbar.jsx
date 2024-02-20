@@ -1,5 +1,6 @@
 import React from "react";
 import { useId } from "react";
+import { NavLink } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -26,21 +27,24 @@ const Navbar = () => {
               <NavigationMenuItem>
                 <button legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Home
+                    <NavLink to={"/"}>Home</NavLink>
                   </NavigationMenuLink>
                 </button>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <button legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    About Us
+                    <NavLink to={"/AboutUs"}>About Us</NavLink>
                   </NavigationMenuLink>
                 </button>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <NavigationMenuLink className="p-5 w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci deleniti oribus?</NavigationMenuLink>
+                  <NavigationMenuLink className="p-5 w-full">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci deleniti oribus?
+                  </NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
@@ -61,20 +65,22 @@ const Navbar = () => {
                   <NavigationMenuLink className="p-5">Link</NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-            <NavigationMenuItem>
-              <button legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Career
-                </NavigationMenuLink>
-              </button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <button legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Contact Us
-                </NavigationMenuLink>
-              </button>
-            </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <button legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Career
+                  </NavigationMenuLink>
+                </button>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <button legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavLink to={"/ContactUs"}>ContactUs</NavLink>
+                  </NavigationMenuLink>
+                </button>
+              </NavigationMenuItem>
+
             </NavigationMenuList>{" "}
           </NavigationMenu>
         </nav>
