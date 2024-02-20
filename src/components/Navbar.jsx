@@ -40,7 +40,7 @@ const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <NavigationMenuLink className="p-5 w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci deleniti tenetur quod quis. Inventore autem maxime, excepturi moiciis illo dignissimos eligendi autem doloribus?</NavigationMenuLink>
+                  <NavigationMenuLink className="p-5 w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci deleniti oribus?</NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
