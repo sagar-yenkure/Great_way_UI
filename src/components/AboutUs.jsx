@@ -1,10 +1,8 @@
 
 const AboutUs = () => {
   return (
-    <div>
-      <h1>Heading from ravi</h1>
-    </div>
+    <div>AboutUs</div>
   )
 }
 
-export default AboutUs
+export default AboutUs;
