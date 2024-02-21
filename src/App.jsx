@@ -7,7 +7,7 @@ import './App.css';
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from './components/ContactUs';
 import Home from './components/Home';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 
 
 function App() {

@@ -39,7 +39,7 @@ export const CardSection = () => {
      {cardItems.map((item) => (
           <div
             key={item.title}
-            className="w-80 h-80 flex flex-col justify-center items-center bg-opacity-70 gap-4 p-7 rounded-xl bg-slate-800 hover:bg-indigo-900 hover:bg-opacity-30 hover:rotate-3 hover:scale-105 transition-all duration-150 ease-linear cursor-pointer"
+            className="w-80  flex flex-col justify-center items-center bg-opacity-70 gap-4 p-7 rounded-xl bg-slate-800 hover:bg-indigo-900 hover:bg-opacity-30 hover:rotate-3 hover:scale-105 transition-all duration-150 ease-linear cursor-pointer"
           >
             <h4 className="text-indigo-400 font-headingFont font-semibold text-xl">
               {item.title}
