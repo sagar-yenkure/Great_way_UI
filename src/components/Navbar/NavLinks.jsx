@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { links } from "./Mylinks";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
@@ -13,7 +13,8 @@ const NavLinks = () => {
         <div key={link.name}>
           <div className=" text-left my-2 md:my-0 md:cursor-pointer  group">
             <h1
-              className="flex justify-between items-center md:pr-0 pr-4 group"
+              className="flex justify-between items-center md:pr-0 pr-4 group  px-2 py-1 rounded-lg hover:bg-slate-500
+              "
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
@@ -43,20 +44,21 @@ const NavLinks = () => {
                     mt-1 bg-white rotate-45"
                     ></div>
                   </div>
-                  <div className="bg-transparent text-white md:h-full h-[20rem] overflow-scroll md:overflow-hidden">
+                  <div className="bg-black rounded-lg p-2 text-white md:h-full h-[20rem] overflow-scroll md:overflow-hidden">
                     {link.sublinks.map((mysublinks) => (
-                      <div className="border grid md:grid-cols-2 gap-2 md:p-2 my-2 ">
+                      <div className=" grid md:grid-cols-2 gap-2 md:p-2 my-2 ">
                         {mysublinks.sublink.map((slink) => (
-                          <span className="text-sm text-gray-600 border hover:bg-gray-300 rounded-lg p-2">
-                            <Link
+                          <span key={slink.name} className="text-sm text-gray-600 border hover:bg-gray-700 hover:bg-opacity-60 rounded-lg p-2">
+                            <NavLink
+                            style={({isActive})=>(isActive?{color:'violet'}:{color:"white"})} 
                               to={slink.link}
-                              className="hover:text-primary"
+                              className="hover:text-purple-500"
                             >
                               <h1 className=" text-white">{slink.name}</h1>
                               <p className="text-xs text-gray-500">
                                 {slink.desc}
                               </p>
-                            </Link>
+                            </NavLink>
                           </span>
                         ))}
                       </div>
