@@ -15,6 +15,11 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #000;
+  opacity: 0.9;
 }
 @layer base {
   :root {
@@ -87,4 +92,13 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.imgPara{
+  background-image: url('https://img.freepik.com/free-photo/new-york-city-panorama_649448-41.jpg?size=626&ext=jpg&ga=GA1.1.1383068034.1707312047&semt=ais');
+  background-position: fixed;
+  background-size: cover;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 100%;
 }
