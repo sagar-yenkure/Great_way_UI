@@ -3,7 +3,7 @@ import './App.css'
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Home from './components/Home';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import {
   Route,
   Routes
