@@ -95,10 +95,13 @@ body{
 }
 
 .imgPara{
-  background-image: url('https://img.freepik.com/free-photo/new-york-city-panorama_649448-41.jpg?size=626&ext=jpg&ga=GA1.1.1383068034.1707312047&semt=ais');
-  background-position: fixed;
+  background-image: url('./components/AboutUs/images/paralax.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
+  background-attachment: fixed;
+  background-origin: initial;
+  opacity: 0.6;
   overflow: hidden;
-  width: 100%;
+  /* width: 100%; */
 }

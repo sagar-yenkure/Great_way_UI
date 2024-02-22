@@ -1,9 +1,12 @@
 import Client1 from "./images/client-1.png";
 import Client2 from './images/client-2.png';
+import Client3 from './images/client-3.png';
 import Client4 from './images/client-4.png';
+import Client5 from './images/client-5.png';
 import Client6 from './images/client-6.png';
 import Client7 from './images/client-7.png';
 import Client8 from './images/client-8.png';
+
 
 export const SecondSocialProof=()=>{
     const imgLinks=[{
@@ -17,7 +20,7 @@ export const SecondSocialProof=()=>{
     ,
     {
         id:3,
-        links:'https://www.vionsys.com/public/assets//img/partner/client-3.png',
+        links:Client3,
     },
     {
         id:4,
@@ -25,7 +28,7 @@ export const SecondSocialProof=()=>{
     },
     {
         id:5,
-        links:'https://www.vionsys.com/public/assets//img/partner/client-5.png',
+        links:Client5,
     }
     ,
     {
