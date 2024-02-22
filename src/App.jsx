@@ -1,15 +1,12 @@
-
-
-import {
-  Route,
-  Routes
-} from "react-router-dom";
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
 import AboutUs from "./components/AboutUs/AboutUs";
+import CareersPage from "./components/Careers/CareersPage";
 import ContactUs from "./components/ContactUs/ContactUs";
-import Home from './components/Home';
-import Navbar from './components/Navbar/Navbar';
+
 import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar/Navbar";
 
 
 function App() {
@@ -20,7 +17,8 @@ function App() {
         <Route exact path="/" element={<Home />}></Route>
         <Route exact path="/AboutUs" element={<AboutUs />}></Route>
         <Route exact path="/ContactUs" element={<ContactUs />}></Route>
-      </Routes>
+        <Route exact path="/Career" element={<CareersPage />}></Route>
+       </Routes>
       <Footer />
     </>
   );

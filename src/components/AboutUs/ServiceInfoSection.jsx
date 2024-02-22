@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AIImage from './images/artai.jpg';
 
  export const  ServiceInfoSection=()=> {
     return (
@@ -37,8 +38,8 @@ import { Link } from "react-router-dom";
         {/* Right side component */}
         <div className="flex-2 flex items-center justify-center">
           <img
-            className="md:w-[100%]  h-[200px] md:h-[350px] "
-            src="https://img.freepik.com/free-photo/smiley-woman-having-video-call-office_23-2148908797.jpg?w=740&t=st=1708426107~exp=1708426707~hmac=3c2db8d5ae45bfe90ff462440482c25603c2d364363c04524f4be5ade5023410"
+            className="md:w-[100%]  h-[200px] md:h-[450px] cursor-pointer rounded-lg "
+            src={AIImage}
             alt=""
           />
         </div>
