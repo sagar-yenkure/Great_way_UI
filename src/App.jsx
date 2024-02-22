@@ -1,10 +1,15 @@
-import "./App.css";
-import AboutUs from "./components/AboutUs";
+
+
+import {
+  Route,
+  Routes
+} from "react-router-dom";
+import './App.css';
+import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import { Route, Routes } from "react-router-dom";
+import Home from './components/Home';
+import Navbar from './components/Navbar/Navbar';
+
 
 function App() {
   return (
