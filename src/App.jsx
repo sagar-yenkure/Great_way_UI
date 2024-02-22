@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import AboutUs from "./components/AboutUs/AboutUs";
+import CareersPage from "./components/Careers/CareersPage";
 import ContactUs from './components/ContactUs';
 import Home from './components/Home';
 import Navbar from './components/Navbar/Navbar';
@@ -20,6 +21,7 @@ function App() {
           <Route exact path='/' element={<Home />}></Route>
           <Route exact path='/AboutUs' element={<AboutUs />}></Route>
           <Route exact path='/ContactUs' element={<ContactUs />}></Route>
+          <Route exact path='/Career' element={<CareersPage/>}></Route>
       </Routes>
     
 
