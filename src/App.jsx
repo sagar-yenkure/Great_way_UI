@@ -9,6 +9,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Home from './components/Home';
 import Navbar from './components/Navbar/Navbar';
+import Footer from "./components/Footer";
 
 
 function App() {

@@ -11,7 +11,7 @@ import {
 
 const ContactUs = () => {
   return (
-    <div className="w-[100vw] overflow-x-hidden mt-8 px-10  flex flex-col justify-center items-center gap-4 bg-slate-900 dark:text-white">
+    <div className="w-[100%] overflow-x-hidden pt-20 px-10  flex flex-col justify-center items-center gap-4 bg-slate-900 dark:text-white">
       <div className="flex overflow-x-hidden mt-10 mb-10  md:flex-row flex-col flex-wrap justify-center  bg-slate-700 rounded-md ">
         {/* left section */}
         <div className="flex flex-1 flex-col gap-16 p-10 bg-gradient-to-r from-purple-500 to-pink-500">
@@ -31,7 +31,7 @@ const ContactUs = () => {
               8766613742
             </span>
             <span className="text-md font-semibold text-blue-900">
-              hr@vionsys.com
+              hr@greateway.com
             </span>
           </div>
           {/* third part */}

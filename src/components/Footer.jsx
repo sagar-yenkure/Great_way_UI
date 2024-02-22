@@ -13,12 +13,12 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12 w-[100vw] overflow-x-hidden">
+    <footer className="bg-gray-800 text-white py-12 w-[100%] overflow-x-hidden">
       <div className=" mx-auto grid grid-cols-1 md:grid-cols-4 gap-12  ml-8">
         <div>
           <h3 className="text-lg font-semibold mb-4">About Us</h3>
           <p className="mb-4">
-            Vionsys IT solutions INDIA Pvt. Ltd. is a comprehensive IT company
+            Greateway Software INDIA Pvt. Ltd. is a comprehensive IT company
             offering end-to-end technology solutions. With expertise in software
             development, network infrastructure, cybersecurity, cloud services,
             and IT consulting, we empower businesses to thrive in the digital
@@ -74,12 +74,12 @@ const Footer = () => {
           </div>
           <div className="flex items-center mb-2">
             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-            <span>Email: hr@vionsys.com</span>
+            <span>Email: hr@greateway.com</span>
           </div>
           <div className="flex items-center">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
             <span>
-              6th floor office no. 504 Stellar Spaces, opposite Zensar IT park
+              6th floor office no. 503 Stellar Spaces, opposite Zensar IT park
               Kharadi Pune
             </span>
           </div>
@@ -87,8 +87,8 @@ const Footer = () => {
       </div>
       <div className="border-t border-gray-700 mt-8 pt-2 text-center">
         <p>
-          &copy; {new Date().getFullYear()} Vionsys IT solutions INDIA Pvt. Ltd.
-          All rights reserved.
+          &copy; {new Date().getFullYear()} Greateway Software IT solutions
+          INDIA Pvt. Ltd. All rights reserved.
         </p>
       </div>
     </footer>
