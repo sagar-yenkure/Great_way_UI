@@ -193,7 +193,7 @@ export const links = [
     ],
   },
   {
-    name: " IndustriesLink ",
+    name: " Industries",
     submenu: true,
     sublinks: [
       {
