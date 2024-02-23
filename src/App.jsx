@@ -6,7 +6,7 @@ import {
 import './App.css';
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from './components/ContactUs';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 
 
