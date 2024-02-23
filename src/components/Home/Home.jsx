@@ -9,7 +9,7 @@ import Special from "./Special";
 
 
 const VideoComponent = ({ video, title, desc, link, isVisible }) => (
-  <div className={`relative ${isVisible ? "" : "hidden"} h-screen`}>
+  <div className={`relative ${isVisible ? "" : "hidden"} h-screen md:h-full`}>
     <video className="w-full h-full object-cover" src={video} loop autoPlay muted />
     <div className="absolute items-center left-1 h-full top-0 flex w-full p-2 md:p-5">
       <div className="md:max-w-[40rem] w-full flex-col space-y-3">

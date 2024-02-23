@@ -192,50 +192,5 @@ export const links = [
       },
     ],
   },
-  {
-    name: " Industries",
-    submenu: true,
-    sublinks: [
-      {
-        sublink: [
-          {
-            id: 28,
-            name: "Pharma",
-            link: "/pharma",
-            desc: "Website or app creation for drug supply productivity.",
-          },
-          {
-            id: 30,
-            name: "Healthcare",
-            link: "/healthcare",
-            desc: "Healthcare app solutions for patient management.",
-          },
-          {
-            id: 31,
-            name: "Professional Services",
-            link: "/professional-services",
-            desc: "Cloud-based solutions for professional services.",
-          },
-          {
-            id: 32,
-            name: "Field Services",
-            link: "/field-services",
-            desc: "Field service app solutions for tracking and dispatch.",
-          },
-          {
-            id: 33,
-            name: "Banking",
-            link: "/banking",
-            desc: "BI and Salesforce services for banking operations.",
-          },
-          {
-            id: 34,
-            name: "Education",
-            link: "/education",
-            desc: "Programming courses for web and app development.",
-          },
-        ],
-      },
-    ],
-  },
+
 ];
