@@ -69,7 +69,7 @@ const Services = () => {
                 <img src={service.logo} width={30} alt="" />
               </span>
               <div className="space-y-2  text-gray-600 transition-all duration-300 group-hover:text-white/90">
-                <h1 className="text-xl p-1 font-bold">{service.title}</h1>
+                <h1 className="text-xl p-1 font-bold text-purple-600">{service.title}</h1>
                 <p>
                  {service.desc}
                 </p>
@@ -78,7 +78,7 @@ const Services = () => {
                 <p>
                   <a
                     href={service.link}
-                    className="text-sky-500 transition-all duration-300 group-hover:text-white"
+                    className="text-purple-600 transition-all duration-300 group-hover:text-white"
                   >
                     Read more &rarr;
                   </a>

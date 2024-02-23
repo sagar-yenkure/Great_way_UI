@@ -42,7 +42,7 @@ const Special = () => {
               <div className=" flex items-center justify-center ">
                 <img className="w-14" src={service?.img} alt="img" />
               </div>
-              <h5 class=" mb-2 text-2xl font-bold tracking-tight flex justify-center items-center text-gray-900 ">
+              <h5 class=" mb-2 text-2xl font-bold text-purple-600 tracking-tight flex justify-center items-center ">
                 {service.title}
               </h5>
               <p class="font-normal max-w-[45rem] text-gray-700 ">
