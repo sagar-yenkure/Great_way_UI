@@ -38,7 +38,7 @@ import AIImage from './images/artai.jpg';
         {/* Right side component */}
         <div className="flex-2 flex items-center justify-center">
           <img
-            className="md:w-[100%]  h-[200px] md:h-[450px] cursor-pointer rounded-lg "
+            className="md:w-[100%]  h-[220px] md:h-[450px] cursor-pointer rounded-lg "
             src={AIImage}
             alt=""
           />

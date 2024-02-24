@@ -1,8 +1,7 @@
-import React from "react";
-import software from "./assets/svg/software.svg";
 import ai from "./assets/svg/ai.svg";
 import cloud from "./assets/svg/cloud.svg";
 import devop from "./assets/svg/devop.svg";
+import software from "./assets/svg/software.svg";
 import testing from "./assets/svg/testing.svg";
 import web from "./assets/svg/web.svg";
 
@@ -14,21 +13,21 @@ const Services = () => {
       title: "Software Development",
       desc: "Our software development services encompass a comprehensive range of technologies, platforms, and programming languages to deliver effective and efficient solutions for your business needs.",
       link: "",
-      theme: "red",
+      theme: "#a31532",
     },
     { 
       logo: web, 
       title: "Web Development", 
       desc: "From design to deployment, our web development services are tailored to meet the needs of both startups and established businesses. We specialize in building responsive and user-friendly web applications.",
       link: "", 
-      theme: "#80ff80" 
+      theme: "#6c914c" 
     },
     { 
       logo: ai, 
       title: "Artificial Intelligence", 
       desc: "Leverage the power of AI to automate processes, gain insights from data, and optimize your business operations. Our AI services cover machine learning, natural language processing, computer vision, and more.",
       link: "", 
-      theme: "blue" 
+      theme: "#ad9171" 
     },
     { 
       logo: cloud, 
@@ -49,7 +48,7 @@ const Services = () => {
       title: "Testing and QA", 
       desc: "Ensure the quality and reliability of your software products through rigorous testing and QA practices. Our testing services include functional testing, performance testing, security testing, and more.",
       link: "", 
-      theme: "cyan" 
+      theme: "#0394fc" 
     },
   ];
   
