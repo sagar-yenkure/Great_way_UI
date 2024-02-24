@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
+import { useState } from "react";
+import { IoClose, IoMenu } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-slate-600 bg-opacity-50 w-full md:fixed z-10 ">
+    <nav className="bg-slate-600 bg-opacity-50 font-headingFont font-extrabold w-full md:fixed z-50 backdrop-blur-md">
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-5 md:w-auto w-full text-white flex justify-between">
           <img src="" alt="Vionsys" className="md:cursor-pointer" />

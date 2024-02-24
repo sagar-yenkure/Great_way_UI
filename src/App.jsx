@@ -7,7 +7,13 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar/Navbar";
-
+import ServiceComponent from "./components/Services/ServiceComponent";
+import {
+  CloudServices,
+  DevOpsServices,
+  SoftDevServices,
+  WebDevServices,
+} from "./components/Services/ServiceData/SoftDevServices";
 
 function App() {
   return (
@@ -18,7 +24,27 @@ function App() {
         <Route exact path="/AboutUs" element={<AboutUs />}></Route>
         <Route exact path="/ContactUs" element={<ContactUs />}></Route>
         <Route exact path="/Career" element={<CareersPage />}></Route>
-       </Routes>
+        <Route
+          exact
+          path="/Service-softDev"
+          element={<ServiceComponent data={SoftDevServices} />}
+        ></Route>
+        <Route
+          exact
+          path="/Service-cloud"
+          element={<ServiceComponent data={CloudServices} />}
+        ></Route>
+        <Route
+          exact
+          path="/Service-devOps"
+          element={<ServiceComponent data={DevOpsServices} />}
+        ></Route>
+         <Route
+          exact
+          path="/Service-webDev"
+          element={<ServiceComponent data={WebDevServices} />}
+        ></Route>
+      </Routes>
       <Footer />
     </>
   );
