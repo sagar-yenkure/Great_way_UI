@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import dnatrim from "../../assets/videos/dna-Trim.mp4";
+import dnatrim from "../../assets/videos/hand-trim.mp4";
 import robottrim from "../../assets/videos/robot-Trim.mp4";
 import vrtrim from "../../assets/videos/vr-Trim.mp4";
 import worktrim from "../../assets/videos/work-Trim.mp4";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
 import Special from "./Special";
+import Tech from "./Tech";
 
 
 const VideoComponent = ({ video, title, desc, link, isVisible }) => (
@@ -77,6 +78,7 @@ const Home = () => {
       </main>
       <Special/>
       <Services />
+      <Tech/>
       <Testimonials/>
     </>
   );

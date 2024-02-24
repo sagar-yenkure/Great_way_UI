@@ -21,7 +21,7 @@ const Services = () => {
       title: "Web Development", 
       desc: "From design to deployment, our web development services are tailored to meet the needs of both startups and established businesses. We specialize in building responsive and user-friendly web applications.",
       link: "", 
-      theme: "green" 
+      theme: "#80ff80" 
     },
     { 
       logo: ai, 
