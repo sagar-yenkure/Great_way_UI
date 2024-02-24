@@ -19,12 +19,13 @@ import {
   SoftDevServices,
   WebDevServices,
 } from "./components/Services/ServiceData/SoftDevServices";
+import { Loading } from "./components/Loading";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<h1>Loading.....</h1>}>
+      <Suspense fallback={<Loading/>}>
 
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
