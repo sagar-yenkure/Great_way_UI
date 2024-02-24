@@ -24,6 +24,10 @@ module.exports = {
       fontWeight:{
         500:"bold",
       },
+      screens:{
+         'secondSectionPT':{'max': '280px'},
+         'secondSectionPT2':{'max':'565'}
+      },
     
       colors: {
         border: "hsl(var(--border))",
