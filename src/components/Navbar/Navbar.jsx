@@ -1,16 +1,24 @@
-import { useState } from "react";
-import { IoClose, IoMenu } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
+
+
+import React, { useState } from "react";
+import {NavLink } from "react-router-dom";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+import logo from "./images/logo.jpeg"
+
 import NavLinks from "./NavLinks";
+import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
+  const navigate = useNavigate()
   const [open, setOpen] = useState(false);
 
   return (
     <nav className="bg-slate-600 bg-opacity-50 font-headingFont font-extrabold w-full md:fixed z-50 backdrop-blur-md">
       <div className="flex items-center font-medium justify-around">
-        <div className="z-50 p-5 md:w-auto w-full text-white flex justify-between">
-          <img src="" alt="Vionsys" className="md:cursor-pointer" />
+        <div className="z-50 p-2 md:w-auto w-full text-white flex justify-between">
+          <img onClick={()=>navigate('/')} src={logo} alt="Vionsys" className="md:cursor-pointer w-20" />
           <div
             className="text-3xl md:hidden transition-all duration-200"
             onClick={() => setOpen((prevOpen) => !prevOpen)}

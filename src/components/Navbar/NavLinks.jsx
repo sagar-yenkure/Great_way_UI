@@ -46,9 +46,9 @@ const NavLinks = () => {
                   </div>
                   <div className="bg-black rounded-lg p-2 text-white md:h-full h-[20rem] overflow-scroll md:overflow-hidden">
                     {link.sublinks.map((mysublinks) => (
-                      <div className=" grid md:grid-cols-2 gap-2 md:p-2 my-2 ">
+                      <div key={mysublinks.name} className=" grid md:grid-cols-2 gap-2 md:p-2 my-2 ">
                         {mysublinks.sublink.map((slink) => (
-                          <span key={slink.name} className="text-sm text-gray-600 border hover:bg-gray-700 hover:bg-opacity-60 rounded-lg p-2">
+                          <span key={slink.name} className="text-sm text-gray-600 border-gray-800 hover:bg-gray-700 hover:bg-opacity-60 rounded-lg p-2">
                             <NavLink
                             style={({isActive})=>(isActive?{color:'violet'}:{color:"white"})} 
                               to={slink.link}
