@@ -1,15 +1,18 @@
 import { Route, Routes } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import "./App.css";
-import AboutUs from "./components/AboutUs/AboutUs";
-import CareersPage from "./components/Careers/CareersPage";
-import ContactUs from "./components/ContactUs/ContactUs";
-import Footer from "./components/Footer";
-import Home from './components/Home/Home';
-import Navbar from "./components/Navbar/Navbar";
 
-import Indrustry from "./components/Indrustry/Indrustry";
+const AboutUs = lazy(() => import("./components/AboutUs/AboutUs"));
+const CareersPage = lazy(() => import("./components/Careers/CareersPage"));
+const ContactUs = lazy(() => import("./components/ContactUs/ContactUs"));
+const Footer = lazy(() => import("./components/Footer"));
+const Home = lazy(() => import("./components/Home/Home"));
+const Navbar = lazy(() => import("./components/Navbar/Navbar"));
+const Indrustry = lazy(() => import("./components/Indrustry/Indrustry"));
+const ServiceComponent = lazy(() =>
+  import("./components/Services/ServiceComponent")
+);
 
-import ServiceComponent from "./components/Services/ServiceComponent";
 import {
   CloudServices,
   DevOpsServices,
@@ -17,11 +20,12 @@ import {
   WebDevServices,
 } from "./components/Services/ServiceData/SoftDevServices";
 
-
 function App() {
   return (
     <>
       <Navbar />
+      <Suspense fallback={<h1>Loading.....</h1>}>
+
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
         <Route exact path="/AboutUs" element={<AboutUs />}></Route>
@@ -33,7 +37,7 @@ function App() {
           exact
           path="/Service-softDev"
           element={<ServiceComponent data={SoftDevServices} />}
-        ></Route>
+          ></Route>
         <Route
           exact
           path="/Service-cloud"
@@ -44,12 +48,13 @@ function App() {
           path="/Service-devOps"
           element={<ServiceComponent data={DevOpsServices} />}
         ></Route>
-         <Route
+        <Route
           exact
           path="/Service-webDev"
           element={<ServiceComponent data={WebDevServices} />}
-        ></Route>
+          ></Route>
       </Routes>
+          </Suspense>
       <Footer />
     </>
   );
