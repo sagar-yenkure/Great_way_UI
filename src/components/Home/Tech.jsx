@@ -57,7 +57,7 @@ const Tech = () => {
       <div className="Tech_list  flex justify-evenly flex-wrap gap-5 items-center ">
         {Tech_list.map((TechIcon) => (
           <div
-            key={TechIcon}
+            key={TechIcon.name}
             className="w-[7rem] h-[7rem] hover:scale-110 hover:cursor-pointer transition-all ease-out bg-white flex-col flex rounded-full justify-center items-center"
           >
             <TechIcon.logo size={42} />
