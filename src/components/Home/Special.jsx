@@ -35,17 +35,17 @@ const Special = () => {
           return (
             <div
               key={service.id}
-              class="bg-white transform 
+              className="bg-white transform 
               transition duration-200
               hover:scale-105 shadow_box max-w-sm p-4 border border-gray-600 rounded-lg my-4"
             >
               <div className=" flex items-center justify-center ">
                 <img className="w-14" src={service?.img} alt="img" />
               </div>
-              <h5 class=" mb-2 text-2xl font-bold text-purple-600 tracking-tight flex justify-center items-center ">
+              <h5 className=" mb-2 text-2xl font-bold text-purple-600 tracking-tight flex justify-center items-center ">
                 {service.title}
               </h5>
-              <p class="font-normal max-w-[45rem] text-gray-700 ">
+              <p className="font-normal max-w-[45rem] text-gray-700 ">
                 {service.des}
               </p>
             </div>

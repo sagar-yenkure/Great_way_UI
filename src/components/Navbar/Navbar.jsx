@@ -14,7 +14,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-slate-600 bg-opacity-50 font-headingFont font-extrabold w-full md:fixed z-50 backdrop-blur-md">
+    <nav className="md:bg-slate-600  bg-black bg-opacity-50 font-headingFont font-extrabold w-full md:fixed z-50 md:backdrop-blur-md">
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-2 md:w-auto w-full text-white flex justify-between">
           <img
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div
           className={`${
             open ? "block" : "hidden"
-          } md:flex flex-col pl-6 md:pl-0  z-10 text-white gap-4 absolute w-full transition-all 0.2s ease-in md:w-fit top-16 md:top-0 md:static justify-center md:flex-row md:items-center md:gap-4`}
+          } md:flex flex-col pl-6 md:pl-0 z-50 p-5 bg-black md:bg-slate-600  text-white gap-4 absolute top-16 w-full transition-all 0.2s ease-in md:w-fit md:top-0 md:static justify-center md:flex-row md:items-center md:gap-4`}
         >
           <div className="flex flex-col md:flex-row md:gap-5">
             <NavLink

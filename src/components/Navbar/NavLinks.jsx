@@ -11,7 +11,7 @@ const NavLinks = () => {
     <>
       {links.map((link) => (
         <div key={link.name}>
-          <div className=" text-left my-2 md:my-0 md:cursor-pointer  group">
+          <div className=" text-left my-2 md:my-0 md:bg-none md:cursor-pointer  group">
             <h1
               className="flex justify-between items-center md:pr-0 pr-4 group  px-2 py-1 rounded-lg hover:bg-slate-500
               "
@@ -37,7 +37,7 @@ const NavLinks = () => {
             </h1>
             {link.submenu && (
               <div>
-                <div className="absolute w-fit md:w-fit top-20 md:top-10 hidden group-hover:block hover:block">
+                <div className="absolute w-fit md:w-fit top-30md:top-10 hidden group-hover:block hover:block">
                   <div className="py-3">
                     <div
                       className="w-4 h-4 left-3 hidden  md:absolute 
