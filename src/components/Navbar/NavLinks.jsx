@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { links } from "./Mylinks";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { MdKeyboardArrowUp } from "react-icons/md";
 
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
@@ -44,7 +43,7 @@ const NavLinks = () => {
                     mt-1 bg-white rotate-45"
                     ></div>
                   </div>
-                  <div className="bg-black rounded-lg p-2 text-white md:h-full h-[20rem] overflow-scroll md:overflow-hidden">
+                  <div className="bg-slate-700 rounded-lg p-2 text-white md:h-full h-[20rem] overflow-scroll md:overflow-hidden">
                     {link.sublinks.map((mysublinks) => (
                       <div key={mysublinks.name} className=" grid md:grid-cols-2 gap-2 md:p-2 my-2 ">
                         {mysublinks.sublink.map((slink) => (

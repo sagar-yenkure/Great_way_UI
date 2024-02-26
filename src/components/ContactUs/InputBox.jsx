@@ -6,7 +6,7 @@ export const InputBox = (name) => {
       id="name"
       name={name}
       placeholder={placeholder}
-      className="mt-1 w-full p-2 bg-slate-600 bg-opacity-30 text-white rounded-md flex  border-violet-500 border-l-4 shadow-md"
+      className="mt-4  w-full p-2 bg-slate-600 bg-opacity-30 text-white rounded-md flex  border-violet-500 border-l-4 shadow-md"
     />
   );
 };
