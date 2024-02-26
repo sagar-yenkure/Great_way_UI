@@ -8,20 +8,30 @@ import Testimonials from "./Testimonials";
 import Special from "./Special";
 import Tech from "./Tech";
 
-
 const VideoComponent = ({ video, title, desc, link, isVisible }) => (
   <div className={`relative ${isVisible ? "" : "hidden"} h-screen md:h-full`}>
-    <video className="w-full h-full object-cover" src={video} loop autoPlay muted />
+    <video
+      className="w-full h-full object-cover"
+      src={video}
+      loop
+      autoPlay
+      muted
+    />
     <div className="absolute items-center left-1 h-full top-0 flex w-full p-2 md:p-5">
       <div className="md:max-w-[40rem] w-full flex-col space-y-3">
-        <h1 className="loop_video_title text-4xl md:text-6xl text-purple-600 max-w-[50rem] font-bold font-headingFont">{title}</h1>
-        <p className="loop_video_desc max-w-[25rem] text-xs md:text-sm font-bold text-white font-navlistFont">{desc}</p>
-        <button className="loop_video_btn items-start bg-purple-600 p-1 md:p-3 rounded-lg font-bold text-white hover:bg-white hover:text-purple-400 transition-all 0.2 ease-out hover:border">Explore with us</button>
+        <h1 className="loop_video_title text-4xl md:text-6xl text-purple-600 max-w-[50rem] font-bold font-headingFont">
+          {title}
+        </h1>
+        <p className="loop_video_desc max-w-[25rem] text-xs md:text-sm font-bold text-white font-navlistFont">
+          {desc}
+        </p>
+        <button className="loop_video_btn items-start bg-purple-600 p-1 md:p-3 rounded-lg font-bold text-white hover:bg-white hover:text-purple-400 transition-all 0.2 ease-out hover:border">
+          Explore with us
+        </button>
       </div>
     </div>
   </div>
 );
-
 
 const Video_Array = [
   {
@@ -76,10 +86,22 @@ const Home = () => {
           ))}
         </section>
       </main>
-      <Special/>
+      {/*3 speciality of site  */}
+
+      <Special />
+
+      {/*service provided by site in short */}
+
       <Services />
-      <Tech/>
-      <Testimonials/>
+
+      {/*technologies used in site */}
+
+      <Tech />
+
+      {/*reviews for the site */}
+      
+
+      <Testimonials />
     </>
   );
 };
