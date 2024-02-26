@@ -1,6 +1,9 @@
+import { useState } from "react";
 import JobsCard from "./JobsCard";
+import ModalForm from "./ModalForm";
 
 const CareersPage = () => {
+  const [isOpen,setIsOpen]=useState(false);
   return (
     <div className="md:pt-16 text-white overflow-x-hidden bg-slate-800 ">
       
@@ -31,8 +34,13 @@ const CareersPage = () => {
 
       {/* Second Section */}
       <div className="w-[100vw] flex flex-wrap justify-between items-center">
-         <JobsCard />
+         <JobsCard setModal={setIsOpen}/>
       </div>
+
+      {/* Modal Code */}
+      {
+        isOpen && <ModalForm setModal={setIsOpen} />
+      }
     </div>
   );
 };
