@@ -9,6 +9,7 @@ export const SoftDevServices =
       },
       imageUrl:
         "https://img.freepik.com/free-photo/technology-circuit-processor-innovation-network-concept_53876-124249.jpg?t=st=1708678196~exp=1708681796~hmac=dddd99ee7c7631021e884b62041f9ec5a6967c9355ec76dfd7afcfe7103876a0&w=900",
+      bgClass:'bg-[linear-gradient(to_top,_#fbc2eb_0%,_#a6c1ee_100%)]',
     },
     cards: [
       {
@@ -59,7 +60,7 @@ export const SoftDevServices =
             description:'We design and develop secure and responsive web applications that cater to your specific business needs. Our web applications are built using cutting-edge technologies and frameworks, ensuring scalability, performance, and a smooth user experience.',
             list:['Full Stack Development','Agile Methodology','API Development','Cloud Deployment']
     }
-    }
+    },
   }
 ;
 
@@ -75,7 +76,9 @@ export const CloudServices =
       },
       imageUrl:
         "https://img.freepik.com/free-photo/website-hosting-concept-with-cloud_23-2149406772.jpg?t=st=1708757828~exp=1708761428~hmac=3a93e6aa8312e91401504889db1e9c2ee0dca6e079b5853ea45ed18f995adfd7&w=740",
-    },
+        bgClass:'bg-[#FFDEE9] bg-[linear-gradient(0deg,_#FFDEE9_0%,_#B5FFFC_100%)]',
+        secondBgClass:'flex-row-reverse'
+      },
     cards: [
       {
         imageUrl:'https://img.freepik.com/free-vector/cloud-computing-polygonal-wireframe-technology-concept_1017-29594.jpg?t=st=1708757935~exp=1708761535~hmac=41141363b33134463f0d9f1b2183bad4906774048927ac46e6dbdd28eed9fc31&w=740',
@@ -140,7 +143,8 @@ export const DevOpsServices =
       },
       imageUrl:
         "https://img.freepik.com/free-vector/gradient-devops-illustration_23-2149373211.jpg?t=st=1708760723~exp=1708764323~hmac=f746794d4a56eaee8f8553aca064281bdbb1330aafc9dd6cf5633f80defbbc98&w=740",
-    },
+      bgClass:'bg-[#FBDA61] bg-[linear-gradient(45deg,_#FBDA61_0%,_#FF5ACD_100%)]'
+      },
     cards: [
       {
         imageUrl:'https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-28275.jpg?t=st=1708763235~exp=1708766835~hmac=f34c240e8d80e84ab6ee4a499f944bdc21f3d3e5ac94df78a771c54095e438ac&w=740',
@@ -205,6 +209,8 @@ export const WebDevServices =
       },
       imageUrl:
         "https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?t=st=1708764781~exp=1708768381~hmac=72c34b53910cd0c6a708ade4ca39721b5055b36e7f87c1b97b84af5bbeeb3c32&w=740",
+      bgClass:'bg-[#85fbff] bg-[linear-gradient(45deg,_#85fbff_0%,_#fee28b_33%,_#f38dae_66%,_#88aafc_100%)]',
+      secondBgClass:'flex-row-reverse',  
     },
     cards: [
       {
