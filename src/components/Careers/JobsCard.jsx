@@ -1,4 +1,4 @@
-const JobsCard = () => {
+const JobsCard = ({setModal}) => {
 
   const cardData = [
     {
@@ -77,6 +77,9 @@ const JobsCard = () => {
       },
   ];
 
+  const handleClick=()=>{
+    setModal(true);
+  }
 
   return (
     <div className="flex flex-col justify-center items-center p-6 ">
@@ -125,7 +128,7 @@ const JobsCard = () => {
             </div>
 
             {/* Apply Button */}
-            <button className="w-[100%] bg-gradient-to-tr text-lg from-green-300 to-blue-400 p-2 rounded-md text-violet-500 font-headingFont font-semibold hover:bg-gradient-to-r hover:from-slate-500 hover:to-slate-500 hover:text-green-500 transition-all duration-150 ease-linear">
+            <button onClick={handleClick} className="w-[100%] bg-gradient-to-tr text-lg from-green-300 to-blue-400 p-2 rounded-md text-violet-500 font-headingFont font-semibold hover:bg-gradient-to-r hover:from-slate-500 hover:to-slate-500 hover:text-green-500 transition-all duration-150 ease-linear">
               Apply Now
             </button>
           </div>
