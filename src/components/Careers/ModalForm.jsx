@@ -44,7 +44,7 @@ const ModalForm = ({setModal}) => {
       }
   return (
     <div className="fixed inset-0 p-4 flex justify-center items-center bg-opacity-30 backdrop-blur-sm">
-      <div className="p-8 relative bg-white bg-transparent shadow-[0px_0px_30px] shadow-green-400 text-black rounded-xl">
+      <div className="p-8 relative bg-white bg-transparent shadow-[0px_0px_30px] shadow-violet-400 text-black rounded-xl">
 
        {/* Close Button */}
        <span onClick={onClose} className="absolute right-4 top-2 font-extrabold text-2xl text-red-600 bg-slate-200 px-2 hover:cursor-pointer rounded-[5px]">&#9747;</span>

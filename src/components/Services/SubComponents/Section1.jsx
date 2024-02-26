@@ -1,8 +1,10 @@
 
 const Section1 = ({obj}) => {
+  const parentBg=`w-[100%] relative py-20 flex justify-center items-center mt-10 ${obj.bgClass}`;
+  const subParentBG=`"w-[90%] p-4 flex flex-wrap justify-between gap-10 items-center ${obj.secondBgClass}`;
   return (
-    <div className="w-[100%] bg-[linear-gradient(to_top,_#fbc2eb_0%,_#a6c1ee_100%)] relative py-20 flex justify-center items-center mt-10">
-        <div className="w-[90%] flex flex-wrap justify-between gap-10 items-center">
+    <div className={parentBg}>
+        <div className={subParentBG}>
           {/* left or the image section of the first section */}
           <div className="flex-3 flex justify-center items-center">
             <img
