@@ -25,6 +25,12 @@ export const links = [
             desc: "Cost-effective and scalable cloud solutions.",
           },
           {
+            id: 4,
+            name: "Customer Relationship Management",
+            link: "/Service-crm",
+            desc: "Enhanced Customer Relationship Management",
+          },
+          {
             id: 5,
             name: "DevOps Solution",
             link: "/Service-devOps",

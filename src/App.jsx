@@ -15,7 +15,7 @@ const ServiceComponent = lazy(() =>
 
 import { Loading } from "./components/Loading";
 import SecondServiceComponent from "./components/Services/SecondServiceComponent";
-import { TestingAndQAServices } from "./components/Services/ServiceData/SecondDevServices";
+import { CRMServices, TestingAndQAServices } from "./components/Services/ServiceData/SecondDevServices";
 import {
   CloudServices,
   DevOpsServices,
@@ -61,6 +61,13 @@ function App() {
             exact
             path="/Service-testingAndQA"
             element={<SecondServiceComponent data={TestingAndQAServices} />}
+          ></Route>
+
+          {/* addition of another route for crm services */}
+          <Route
+            exact
+            path="/Service-crm"
+            element={<SecondServiceComponent data={CRMServices} />}
           ></Route>
         </Routes>
       </Suspense>

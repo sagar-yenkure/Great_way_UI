@@ -1,7 +1,13 @@
+import { faIntercom } from "@fortawesome/free-brands-svg-icons";
 import {
+    faChalkboardUser,
+    faCloud,
+    faDatabase,
     faFile,
+    faHandshakeAngle,
     faHouseLaptop,
     faMobile,
+    faPeopleArrows,
     faPeopleGroup,
     faVialVirus,
     faWandSparkles,
@@ -53,6 +59,54 @@ export const TestingAndQAServices={
             }
         ]
     }
+}
+
+export const CRMServices={
+    first:{
+        content:{
+            title:'Customer Relationship Management (CRM)',
+            description:'In our CRM methodology, we champion personalized solutions, leveraging innovative technology and data-driven insights. Our commitment to seamless integration and continuous refinement ensures enduring client success and elevated customer experiences, driving sustained growth and satisfaction.'
+        },
+        imageUrl:'https://img.freepik.com/free-photo/collage-customer-experience-concept_23-2149367128.jpg?t=st=1709116082~exp=1709119682~hmac=1829102c79982f041caf101efb8b36798f829834ac42164f3c605b06a3e7ab56&w=740'
+    },
+
+    second:{
+        titleName:'CRM',
+        description:"At our CRM firm, we prioritize client-centricity, leveraging cutting-edge technology and tailored strategies to optimize customer relationships. Our approach emphasizes seamless integration, data-driven insights, and continuous improvement, ensuring sustained growth and client satisfaction.",
+        circleItems:['Trusted Industry Leader','Superior Service Quality','Tailored CRM Solutions']
+    },
+
+    third:{
+        cards:[
+             {icon:faCloud,text:'CRM Deployment'},
+             {icon:faIntercom,text:'Customization Services'},
+             {icon:faPeopleArrows, text:'Integration Solutions'},
+             {icon:faDatabase, text:'Data Migration'},
+             {icon:faChalkboardUser,text:'Training Programs'},
+             {icon:faHandshakeAngle,text:'Support Services'}
+        ]
+    },
+
+    fourth:{
+        cards:[
+            {
+                title:'CRM Implementation',
+                message:'Our CRM implementation process prioritizes precision and adaptability, ensuring seamless integration and alignment with your unique business needs. With expertise and diligence, we empower your organization to optimize customer relationships effectively.'
+            },
+            {
+                title:'Customization and Configuration',
+                message:'With meticulous attention to detail, our customization and configuration services tailor CRM platforms to match your specific business requirements perfectly, empowering you to maximize efficiency and achieve optimal results.'
+            },
+            {
+                title:'Integration Services',
+                message:'Our Integration Services seamlessly connect your CRM platform with essential business systems, streamlining data flow and enhancing functionality. With expertise and precision, we ensure smooth operations and maximize productivity.'
+            },
+            {
+                title:'Data Migration and Cleansing',
+                message:'Assist clients in migrating existing customer data from legacy systems or spreadsheets to their new CRM platform, ensuring data accuracy, consistency, and integrity throughout the process.'
+            }
+        ]
+    }   
 }
 
 
