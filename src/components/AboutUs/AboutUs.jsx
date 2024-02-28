@@ -7,7 +7,7 @@ import { ServiceInfoSection } from "./ServiceInfoSection";
 
 const AboutUs = () => {
   return (
-    <div className="flex w-[100%] relative overflow-hidden bg-black pt-12  justify-center items-center flex-col">
+    <div className="flex w-[100vw] relative overflow-hidden bg-black pt-12  justify-center items-center flex-col">
       {/* first section which will be to show the it service info */}
       <h2 className="mt-10 text-2xl uppercase font-bold text-violet-400 font-headingFont">
         About Our Company

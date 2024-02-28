@@ -23,6 +23,11 @@ export const CardSection = () => {
         "IT companies can contribute to bridging the digital divide by promoting access to technology in underserved communities. This can include initiatives like providing affordable or free devices, internet connectivity, and digital literacy programs.",
     },
     {
+      title: "E-commerce Development",
+      content:
+        "In E-commerce Development, we excel. Our team merges innovation and expertise to craft bespoke online solutions. From seamless user experiences to robust backend systems, we elevate businesses in the digital realm, setting benchmarks for success and growth.",
+    },
+    {
       title: "Skills Development and Education",
       content:
         "IT companies can support initiatives that enhance technology skills and education. This can involve offering internships, scholarships, and training programs, as well as partnering with educational institutions to promote STEM education.",
@@ -35,11 +40,11 @@ export const CardSection = () => {
   ];
   return (
     <div className="mt-10 w-[100%] h-auto flex justify-center items-center p-2">
-     <div className="w-[80%] flex flex-wrap justify-center gap-10">
+     <div className="w-[90%] grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center gap-x-10 gap-y-16">
      {cardItems.map((item) => (
           <div
             key={item.title}
-            className="w-80  flex flex-col justify-center items-center bg-opacity-70 gap-4 p-7 rounded-xl bg-slate-800 hover:bg-indigo-900 hover:bg-opacity-30 hover:rotate-3 hover:scale-105 transition-all duration-150 ease-linear cursor-pointer"
+            className="flex flex-col justify-center items-center bg-opacity-70 gap-4 p-7 rounded-xl bg-slate-800 hover:bg-indigo-900 hover:bg-opacity-30 hover:rotate-3 hover:scale-105 transition-all duration-150 ease-linear cursor-pointer"
           >
             <h4 className="text-indigo-400 font-headingFont font-semibold text-xl">
               {item.title}

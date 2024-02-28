@@ -2,17 +2,17 @@ export const FirstSocialProofSection = () => {
   const items = [
     {
       id: "1",
-      count: '5+',
+      count: '3.5+',
       message: "Years Helping Business",
     },
     {
       id: "2",
-      count: '50+',
+      count: '30+',
       message: "Employees",
     },
     {
       id: "3",
-      count: 26,
+      count: 12,
       message: "Complete Projects",
     },
   ];
