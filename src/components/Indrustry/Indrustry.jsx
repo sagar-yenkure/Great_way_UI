@@ -6,6 +6,9 @@ import health from "./images/health.jpg";
 import insurance from "./images/insurance.jpg";
 import pharma from "./images/pharma.jpg";
 import project from "./images/projects.jpg";
+import construction from "./images/construction.jpg";
+import Finance from "./images/Finance.jpg";
+import telecom from "./images/telecom.jpg";
 
 const Indrustry = () => {
   const pharma_list = [
@@ -47,6 +50,10 @@ const Indrustry = () => {
     "Virtual Classroom Solutions",
   ];
   const field_list = ["Field Service Management", "IoT and Remote Monitoring"];
+
+  const telecom_list = ["Network Management", "Wireless Communications","Virtualization & Cloud"];
+const construction_list=["Energy Efficiency","Network Traffic Management","Predictive Maintenance"]
+const Finance_list=["Blockchain and Cryptocurrency","Algorithmic Trading","Financial Inclusion","Cybersecurity"]
 
   return (
     <main>
@@ -248,6 +255,93 @@ const Indrustry = () => {
               <div
                 key={index}
                 class="border md:text-xl w-full md:w-fit text-xs px-3 p-3 flex justify-center items-center hover:cursor-pointer hover:scale-125 transition-all ease-linear border-orange-500 rounded-md bg-orange-400"
+              >
+                <h1>{name}</h1>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      {/* telecome section */}
+      <section class="section relative w-full h-screen md:h-[40rem] overflow-hidden pharma_section">
+        <div class="pharma_img h-full w-full">
+          <img
+            class="object-cover h-full w-full"
+            src={telecom}
+            alt="  Telecome Services"
+          />
+        </div>
+        <div class="pahrma_text absolute overflow-hidden top-0 w-full left-0 p-4 gap-5 flex-col h-full flex justify-center items-center">
+          <h1 class="text-black px-5 font-bold text-4xl md:text-5xl">
+            Telecome Services
+          </h1>
+          <p class="text-md md:font-bold">
+          AI-Powered Networks: Transforming Telecommunications with Smart Solutions
+          </p>
+          <div class="pharma_subs flex flex-wrap gap-3">
+            {telecom_list.map((name, index) => (
+              <div
+                key={index}
+                class="border md:text-xl w-full md:w-fit text-xs px-3 p-3 flex justify-center items-center hover:cursor-pointer hover:scale-125 transition-all ease-linear border-[#FF3EA5] rounded-md bg-[#FF3EA5]"
+              >
+                <h1>{name}</h1>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* construction section */}
+      <section class="section relative w-full h-screen md:h-[40rem] overflow-hidden pharma_section">
+        <div class="pharma_img h-full w-full">
+          <img
+            class="object-cover h-full w-full"
+            src={construction}
+            alt=" construction Services"
+          />
+        </div>
+        <div class="pahrma_text absolute overflow-hidden top-0 w-full left-0 p-4 gap-5 flex-col h-full flex justify-center items-center">
+          <h1 class="text-black px-5 font-bold text-4xl md:text-5xl">
+          Construction Services
+          </h1>
+          <p class="text-md md:font-bold">
+          Construction Revolution: How AI and Tech are Reshaping Telecom Infrastructure Deployment
+          </p>
+          <div class="pharma_subs flex flex-wrap gap-3">
+            {construction_list.map((name, index) => (
+              <div
+                key={index}
+                class="border md:text-xl w-full md:w-fit text-xs px-3 p-3 flex justify-center items-center hover:cursor-pointer hover:scale-125 transition-all ease-linear border-[#B784B7] rounded-md bg-[#B784B7]"
+              >
+                <h1>{name}</h1>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* finance section */}
+      <section class="section relative w-full h-screen md:h-[40rem] overflow-hidden pharma_section">
+        <div class="pharma_img h-full w-full">
+          <img
+            class="object-cover h-full w-full"
+            src={Finance}
+            alt="Finance Services"
+          />
+        </div>
+        <div class="pahrma_text absolute overflow-hidden top-0 w-full left-0 p-4 gap-5 flex-col h-full flex justify-center items-center">
+          <h1 class="text-black px-5 font-bold text-4xl md:text-5xl">
+          Finance Services
+          </h1>
+          <p class="text-md md:font-bold">
+          Cyber-Finance Fusion: The Impact of AI and Tech on Financial Sector Evolution
+          </p>
+          <div class="pharma_subs flex flex-wrap gap-3">
+            {Finance_list.map((name, index) => (
+              <div
+                key={index}
+                class="border md:text-xl w-full md:w-fit text-xs px-3 p-3 flex justify-center items-center hover:cursor-pointer hover:scale-125 transition-all ease-linear border-[#A3C9AA] rounded-md bg-[#A3C9AA]"
               >
                 <h1>{name}</h1>
               </div>
