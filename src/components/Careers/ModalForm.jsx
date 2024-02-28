@@ -60,8 +60,9 @@ const ModalForm = ({ setModal }) => {
   };
 
   return (
+    <>
+      <Toaster />
     <div className="fixed inset-0 p-4 flex justify-center items-center bg-opacity-30 backdrop-blur-sm">
-        <Toaster />
       <div className="p-8 relative bg-white bg-transparent shadow-[0px_0px_30px] shadow-green-400 text-black rounded-xl">
         {/* Close Button */}
         <span
@@ -111,6 +112,7 @@ const ModalForm = ({ setModal }) => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 
