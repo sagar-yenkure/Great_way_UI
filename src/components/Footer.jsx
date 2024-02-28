@@ -27,15 +27,15 @@ const Footer = () => {
           <div className="">
             <FontAwesomeIcon
               icon={faFacebook}
-              className="mr-4 size-10 bg-blue-500 rounded-full"
+              className="mr-4 size-10 bg-[#4267B2] rounded-full"
             />
             <FontAwesomeIcon
               icon={faInstagram}
-              className="mr-4 size-10 bg-rose-500 rounded"
+              className="mr-4 size-10 bg-pink-600 rounded-xl"
             />
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="mr-4 size-10 bg-blue-500 rounded"
+              className="mr-4 size-10 bg-[#0A66C2]  rounded-md"
             />
           </div>
         </div>
@@ -87,8 +87,8 @@ const Footer = () => {
       </div>
       <div className="border-t border-gray-700 mt-8 pt-2 text-center">
         <p>
-          &copy; {new Date().getFullYear()} Greateway Software IT solutions
-          INDIA Pvt. Ltd. All rights reserved.
+          &copy; {new Date().getFullYear()} Vionsys IT solutions INDIA Pvt. Ltd.
+          All rights reserved.
         </p>
       </div>
     </footer>
