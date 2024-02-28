@@ -1,6 +1,6 @@
  export const SecondSection = () => {
     return (
-      <div className="flex w-[90%] overflow-hidden secondSectionPT2:mt-[-80vh] secondSectionPT:mt-[70vh] mt-[25vh] md:mt-[10px] flex-wrap gap-10 p-6 ">
+      <div className="flex w-[90%] overflow-hidden secondSectionPT2:mt-[-80vh] secondSectionPT:mt-[40vh] mt-[2vh] md:mt-[10px] flex-wrap gap-10 p-6 ">
         {/* first left part */}
         {/* <div className="flex-2 text-white">
           <img
